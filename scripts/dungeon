@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#Put the path to the library directory here
+DUNGEON_HOME=/home/username/lib/dungeon
+
+cd $DUNGEON_HOME && ./dungeon
+
+
+
