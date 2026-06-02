@@ -710,7 +710,14 @@ CD2050	FORMAT(' BLOW 2050-- ',5I7)
 	IF(HFLG) CALL RSPSUB(595,DV)		! deader.
 	GO TO 3000
 C
-2100	IF(DEF-2) 2200,2300,2400		! def <2,=2,>2
+2100	IF(DEF < 2) THEN
+                GO TO 2100
+        ELSE IF(DEF == 2) THEN
+                GO TO 2300
+        ELSE
+                GO TO 2400
+        END IF
+C
 2200	ATT=MIN0(ATT,3)				! scale att.
 	TBL=DEF1R(ATT)				! choose table.
 	GO TO 2500

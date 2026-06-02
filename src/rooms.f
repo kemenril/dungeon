@@ -662,9 +662,11 @@ C
 C R57--	Nirvana and end of game
 C
 57000	IF(PRSA.NE.WALKIW) RETURN		! walkin?
-	PAUSE '--More--'
+	PRINT *,'--More--'
+        READ (*,*)
 	CALL RSPEAK(726)
-	PAUSE '--More--'
+	PRINT *,'--More--'
+        READ (*,*)
 	CALL SCORE(.FALSE.)
 	CALL EXIT
 C
