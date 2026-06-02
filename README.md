@@ -2,7 +2,7 @@
 A port to new-ish GFortran of the old Dungeon game, originally created at the MIT Laboratory. This was the basis for Infocom's Zork. 
 
 ### Provenance
-This is a port to GFortran of the old MIT Dungeon game, which I did around the end of 2010, uploaded to a web server on the internet around January 2011, and left for a while.  It was based on a distribution of Dungeon 3.2 which I found in an archive somewhere.  The original readme files, which will be included (along with the old binaries, for reasons of completeness), say that it was Robert Supnik's V3.2B ported to MS-DOS by David Kinder, around 2003, based on some earlier work by Volker Blasius.  Robert targeted G77 under MS-DOS.
+This is a port to GFortran of the old MIT Dungeon game, which I did around the end of 2010, uploaded to a web server on the internet around January 2011, and left for a while.  It was based on a distribution of Dungeon 3.2 which I found in an archive somewhere.  The original readme files, which will be included (along with the old binaries, for reasons of completeness), say that it was Robert Supnik's V3.2B ported to MS-DOS by David Kinder, around 2003, based on some earlier work by Volker Blasius.  David targeted G77 under MS-DOS.
 
 I took that code, and ported it to GFortran under RHEL 5.  A number of minor changes were required to make it go, at the time.  More have been added recently, in order to bring things in line with the Fortran 2018 standard.  The newest code now builds without changes on EL9, and probably anything else with an appropriate GFortran.
 
